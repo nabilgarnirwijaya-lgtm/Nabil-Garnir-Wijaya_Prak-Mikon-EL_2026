@@ -21,9 +21,8 @@ Serial.print("Tegangan (V): ");
 Serial.println(tegangan_V);
 Serial.print("daya (mW): ");
 Serial.println(daya_mW);
-delay(1000);
-display.clearDisplay();
 
+display.clearDisplay();
 display.setTextSize(1);
 display.setTextColor(WHITE);
 display.setCursor(0, 0);
@@ -34,4 +33,5 @@ display.println(tegangan_V);
 display.print("daya (mW): ");
 display.println(daya_mW);
 display.display();
+delay(1000);
 }
